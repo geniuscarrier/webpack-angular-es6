@@ -25,7 +25,7 @@ Copy everything in `build/` folder to the server.
 
 ####Demo
 
-[Demo](http://geniuscarrier.com/webpack-angular-es6)
+[Demo](http://geniuscarrier.com/demo/webpack-angular-es6)
 
 ##Angular Modules
 
