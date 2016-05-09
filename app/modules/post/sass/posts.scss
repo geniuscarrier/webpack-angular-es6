@@ -1,0 +1,15 @@
+#posts {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            article {
+                margin: 40px 0;
+            }
+        }
+    }
+    h2 {
+        text-transform: capitalize;
+    }
+}

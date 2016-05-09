@@ -1,0 +1,18 @@
+<div class="container" id="posts">
+    <div class="page-header">
+        <h1>Posts</h1>
+    </div>
+    <ul>
+        <li ng-repeat="p in posts.posts">
+            <article class="post">
+                <header class="post-header">
+                    <h2 class="post-title"><a ng-href="./#/posts/{{p.id}}">{{p.title}}</a></h2>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{p.body}} <a class="read-more" ng-href="./#/posts/{{p.id}}">...read more</a></p>
+                </section>
+            </article>
+            <hr>
+        </li>
+    </ul>
+</div>

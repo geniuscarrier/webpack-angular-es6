@@ -1,0 +1,37 @@
+<div class="container" id="post">
+    <section class="post-content">
+        <h2>{{post.post.title}}</h2>
+        <p>{{post.post.body}}</p>
+    </section>
+    <section class="post-author">
+        <h4 class="divider"><span>Author</span></h4>
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-6">
+                <h4><a href="./#/users/{{post.user.id}}">{{post.user.name}}</a></h4>
+                <p>Read <a href="./#/users/{{post.user.id}}">more posts</a> by this author.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h4>Share this post</h4>
+                <social></social>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <h4 class="divider"><span>Comments</span></h4>
+        <ul>
+            <li ng-repeat="c in post.comments">
+                <article class="comment">
+                    <header class="comment-header">
+                        <h2><a ng-href="./#/comments/{{c.id}}">{{c.name}}</a></h2>
+                    </header>
+                    <section class="comment-excerpt">
+                        <p>Commented by: <span ng-bind-html="c.email | reply"></span></p>
+                        <p>{{c.body}}</p>
+                        <vote></vote>
+                    </section>
+                </article>
+                <hr>
+            </li>
+        </ul>
+    </section>
+</div>

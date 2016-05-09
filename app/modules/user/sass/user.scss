@@ -1,0 +1,38 @@
+#user {
+    h2 {
+        text-transform: capitalize;
+    }
+    .divider {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eeeeee;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+        span {
+            background-color: #ffffff;
+            padding: 0 20px;
+        }
+    }
+    .user-info {
+        margin: 100px 0;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    address {
+        margin-bottom: 0;
+    }
+    .posts {
+        margin: 50px 0;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                article {
+                    margin: 40px 0;
+                }
+            }
+        }
+    }
+}
