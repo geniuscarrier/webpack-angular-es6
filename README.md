@@ -1,5 +1,5 @@
 #Webpack Angular ES6
-A boilerplate for writing moduler Angular 1.X in ES6 using Webpack.
+A boilerplate for writing modular Angular 1.X in ES6 using Webpack.
 
 ##Quick start
 
