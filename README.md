@@ -1,3 +1,4 @@
+![Webpack Angular ES6](http://geniuscarrier.me/images/webpack-angular-es6.png)
 #Webpack Angular ES6
 A boilerplate for writing modular Angular 1.X in ES6 using Webpack.
 
