@@ -11,11 +11,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li ng-class="{ active: isActive('/posts')}"><a href="./#/posts">Posts</a></li>
-                <li ng-class="{ active: isActive('/comments')}"><a href="./#/comments">Comments</a></li>
+                <li ng-class="{ active: isActive('/posts')}"><a ui-sref="listPosts">Posts</a></li>
+                <li ng-class="{ active: isActive('/comments')}"><a ui-sref="listComments">Comments</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-class="{ active: isActive('/users')}"><a href="./#/users">Users</a></li>
+                <li ng-class="{ active: isActive('/users')}"><a ui-sref="listUsers">Users</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
