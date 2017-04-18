@@ -1,38 +1,38 @@
 ![Webpack Angular ES6](http://geniuscarrier.me/images/webpack-angular-es6.png)
-#Webpack Angular ES6
+# Webpack Angular ES6
 A boilerplate for writing modular Angular 1.X in ES6 using Webpack.
 
-##Quick start
+## Quick start
 
-###Install dependencies
+### Install dependencies
 ```
 npm install
 ```
-####Dev
+#### Dev
 ```
 npm run dev
 ```
 In your browser, navigate to: http://localhost:8080/
-####Test
+#### Test
 ```
 npm run test
 ```
 
-####Production
+#### Production
 ```
 npm run build 
 ```
 Copy everything in `build/` folder to the server.
 
-####Demo
+#### Demo
 
 [Demo](http://geniuscarrier.com/demo/webpack-angular-es6)
 
-##Angular Modules
+## Angular Modules
 
 Instead of using the great [AngularJS Seed Project](https://github.com/angular/angular-seed), which is using Horizontal Modules, provided by the AngularJS team, I am using Vertical Modules, which is highly inspired by [MEAN.JS](https://github.com/meanjs/mean). This helps us divide the project logic into modules that represent individual logical units and scale well for bigger projects that are more maintainable in the long term. The following Module structure and folder structure use demo example to demonstrate how it works.
 
-###Modules Structure
+### Modules Structure
 
 
 <table>
@@ -87,7 +87,7 @@ Instead of using the great [AngularJS Seed Project](https://github.com/angular/a
 </tbody>
 </table>
 
-###Folder Structure
+### Folder Structure
 
 This structure allows clear separation of functionality and concerns.
 
@@ -145,16 +145,16 @@ This structure allows clear separation of functionality and concerns.
 |-----sass
 ```
 
-##Basic Usage
+## Basic Usage
 
 This boilerplate comes with a blog example. I am taking post module as an example to illustrate how the Angular work with Webpack in ES6.
 
 
-###API
+### API
 
 Using [JSONPlaceholder](http://jsonplaceholder.typicode.com/) for fake Online REST API for Testing and Prototyping
 
-###Controller
+### Controller
 
 ```
 export default class PostController {
@@ -172,7 +172,7 @@ PostController.$inject = ['$stateParams', '$location', 'post', 'user', 'comments
 
 ```
 
-###Directive
+### Directive
 
 ```
 /*@ngInject*/
@@ -199,7 +199,7 @@ export default class Menu {
 
 ```
 
-###Service
+### Service
 
 ```
 /*@ngInject*/
@@ -227,7 +227,7 @@ export default class PostService {
 
 ```
 
-###Filter
+### Filter
 
 ```
 export default () => {
@@ -238,7 +238,7 @@ export default () => {
 
 ```
 
-###Routes
+### Routes
 
 ```
 /*@ngInject*/
@@ -283,7 +283,7 @@ export default ($stateProvider) => {
 }
 ```
 
-###Test (Controller)
+### Test (Controller)
 
 ```
 describe('PostController', () => {
@@ -311,7 +311,7 @@ describe('PostController', () => {
 
 
 ```
-###Index (Post Module)
+### Index (Post Module)
 
 ```
 import routes from './config/routes';
@@ -329,7 +329,7 @@ export default angular.module('post')
   .name;
 ```
 
-###Application
+### Application
 
 ```
 import home from './modules/home';
