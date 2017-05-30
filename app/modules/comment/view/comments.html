@@ -6,10 +6,10 @@
         <li ng-repeat="c in comments.comments">
             <article class="comment">
                 <header class="comment-header">
-                    <h2 class="comment-title"><a ng-href="./#/comments/{{c.id}}">{{c.name}}</a></h2>
+                    <h2 class="comment-title"><a ui-sref="comment({commentId:c.id})">{{c.name}}</a></h2>
                 </header>
                 <section class="comment-excerpt">
-                    <p>{{c.body}} <a class="read-more" ng-href="./#/comments/{{c.id}}">...read more</a></p>
+                    <p>{{c.body}} <a class="read-more" ui-sref="comment({commentId:c.id})">...read more</a></p>
                 </section>
             </article>
             <hr>

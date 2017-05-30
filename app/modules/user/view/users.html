@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="media-body">
-                <a ng-href="./#/users/{{u.id}}"><h4 class="media-heading list-group-item-heading">{{u.name}}</h4></a>
+                <a ui-sref="user({userId:u.id})"><h4 class="media-heading list-group-item-heading">{{u.name}}</h4></a>
                 <p class="list-group-item-text">{{u.username}}</p>
             </div>
         </li>

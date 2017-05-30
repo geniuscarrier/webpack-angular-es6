@@ -6,10 +6,10 @@
         <li ng-repeat="p in posts.posts">
             <article class="post">
                 <header class="post-header">
-                    <h2 class="post-title"><a ng-href="./#/posts/{{p.id}}">{{p.title}}</a></h2>
+                    <h2 class="post-title"><a ui-sref="post({postId:p.id})">{{p.title}}</a></h2>
                 </header>
                 <section class="post-excerpt">
-                    <p>{{p.body}} <a class="read-more" ng-href="./#/posts/{{p.id}}">...read more</a></p>
+                    <p>{{p.body}} <a class="read-more" ui-sref="post({postId:p.id})">...read more</a></p>
                 </section>
             </article>
             <hr>

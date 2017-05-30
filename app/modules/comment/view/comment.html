@@ -4,6 +4,6 @@
         <p>{{comment.comment.body}}</p>
         <p>Commented by: <strong>{{comment.comment.email}}</strong></p>
         <hr>
-        <p>See other comments on this <a href="./#/posts/{{comment.comment.postId}}">post</a>.</p>
+        <p>See other comments on this <a ui-sref="post({postId:comment.comment.postId})">post</a>.</p>
     </section>
 </div>
